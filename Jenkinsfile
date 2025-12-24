@@ -1,10 +1,11 @@
+
 pipeline {
     agent any
 
     stages {
         stage('Clone Repo') {
             steps {
-                git branch: 'master', url: 'https://github.com/syam82281/jekflix-template.git'
+                git branch: 'main', url: 'https://github.com/syam82281/jekflix-deploy.git'
             }
         }
 
@@ -28,3 +29,4 @@ pipeline {
         }
     }
 }
+
