@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jekflix-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jekflix
+  template:
+    metadata:
+      labels:
+        app: jekflix
+    spec:
+      containers:
+      - name: jekflix
+        image: jekflix-site:latest
+        ports:
+        - containerPort: 4000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jekflix-service
+spec:
+  selector:
+    app: jekflix
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 4000
+    nodePort: 30080
