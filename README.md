@@ -244,7 +244,7 @@ or
 
 http://your-domain.com/webhook
 ✅ What you actually need to put here
-Webhook is used when:
+*Webhook is used when:
 
 You have a server where you installed Jenkins, or
 
