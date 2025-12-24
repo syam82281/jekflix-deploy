@@ -156,7 +156,7 @@ paginate_content:
   enabled: true
   debug: false
   collections:
-    - posts
+ - posts
   auto: false
   separator: "--page-break--"
   permalink: "/:num/"
@@ -308,7 +308,7 @@ http://<EC2-Public-IP>:5000/webhook
 GitHub Actions automatically runs when you push code.
 
 🔧 Tell me which one you are doing
-Please reply with 1, 2, or 3:
+Please reply with 1, 2, or 3:4
 
 Jenkins pipeline
 
